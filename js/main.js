@@ -50,3 +50,13 @@ function scrollTop(){
     else scrollTop.classList.remove('scroll-top')
 }
 window.addEventListener('scroll', scrollTop)
+
+const scrollRev = ScrollReveal({
+    origin: 'top',
+    distance: '30px',
+    duration: 2000,
+    reset: true
+});
+scrollRev.reveal('.home_data, .home_img, .about_data, .about_img, .services_content, .menu-content, .app_data, .app-img, .contact_data, .contact_button, .footer_content',{
+    interval: 200
+})
